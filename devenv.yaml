@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://devenv.sh/devenv.schema.json
+yaml-language-server: $schema=https://devenv.sh/devenv.schema.json
 inputs:
   nixpkgs:
     url: github:cachix/devenv-nixpkgs/rolling
@@ -10,6 +10,6 @@ inputs:
 # permittedInsecurePackages:
 #  - "openssl-1.1.1w"
 
-# If you have more than one devenv you can merge them
-#imports:
-# - ./backend
+imports:
+  - /backend
+  - /ui
