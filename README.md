@@ -15,18 +15,18 @@ Uses nix to build a development environment.
 
 Experimenting with the mono repo approach of devenv.
 
-- [x] Tools
-    - [x] Gradle
-    - [x] Kotlin
-    - [x] Git
-    - [x] NodeJS
-    - [x] Typescript
+- [x] ~~Tools~~
+    - [x] ~~Gradle~~
+    - [x] ~~Kotlin~~
+    - [x] ~~Git~~
+    - [x] ~~NodeJS~~
+    - [x] ~~Typescript~~
 - [ ] Konfiguration
     - [ ] Auth Gradle
     - [ ] Auth npm
-    - [x] IntelliJ JDK Path
+    - [x] ~~IntelliJ JDK Path~~
 - [ ] Services
-    - [x] Postgress
+    - [x] ~~Postgres~~
     - [ ] Caddy
 - [ ] Profile
     - [ ] Entwicklung
