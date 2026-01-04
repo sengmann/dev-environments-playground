@@ -23,6 +23,17 @@ in
         pass = "tcc";
       }
     ];
-
   };
+
+  processes.backend = {
+      exec = "gradle bootTestRun";
+      cwd = "${config.git.root}/backend";
+      process-compose = {
+        depends_on = {
+          postgres = {
+            condition = "process_healthy";
+          };
+        };
+      };
+    };
 }
