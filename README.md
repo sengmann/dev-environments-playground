@@ -10,6 +10,7 @@ Uses nix to build a development environment.
 2. install devenv
 3. clone project
 4. enter cloned dir
+5. use command `direnv allow`
 
 ## Structure
 
