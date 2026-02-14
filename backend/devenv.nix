@@ -9,6 +9,7 @@ let
   initScript = ''
     CREATE TABLE Training(id SERIAL PRIMARY KEY, name TEXT);
   '';
+  dbPass = config.secretspec.secrets.db-pass;
 in
 {
   languages.kotlin.enable = true;
@@ -20,13 +21,16 @@ in
         name = "tcc";
         initialSQL = initScript;
         user = "tcc";
-        pass = "tcc";
+        pass = dbPass;
       }
     ];
   };
 
   processes.backend = {
     exec = "gradle bootTestRun";
+    env = {
+      SPRING_DATABASE_PASSWORD = dbPass;
+    };
     cwd = "${config.git.root}/backend";
     process-compose = {
       depends_on = {

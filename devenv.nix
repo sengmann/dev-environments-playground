@@ -8,6 +8,7 @@
 {
   packages = [
     pkgs.git
+    pkgs.secretspec
   ];
 
   # https://devenv.sh/services/

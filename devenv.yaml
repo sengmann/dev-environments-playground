@@ -9,6 +9,10 @@ inputs:
 # If you're willing to use a package that's vulnerable
 # permittedInsecurePackages:
 #  - "openssl-1.1.1w"
+secretspec:
+  enable: true
+  provider: keyring # keyring, dotenv, env, 1password, lastpass
+  profile: development # profile from secretspec.toml
 
 imports:
   - /backend
