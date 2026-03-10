@@ -22,9 +22,9 @@ Experimenting with the mono repo approach of devenv.
     - [x] ~~Git~~
     - [x] ~~NodeJS~~
     - [x] ~~Typescript~~
-- [ ] Konfiguration
-    - [ ] Auth Gradle
-    - [ ] Auth npm
+- [x] ~~Konfiguration~~
+    - [x] ~~Auth Gradle~~
+    - [x] ~~Auth npm~~
     - [x] ~~IntelliJ JDK Path~~
 - [ ] Services
     - [x] ~~Postgres~~
@@ -35,4 +35,3 @@ Experimenting with the mono repo approach of devenv.
 - [ ] Build
     - [ ] Dockerfile
     - [ ] From Scratch
-
