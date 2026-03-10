@@ -8,9 +8,12 @@ Uses nix to build a development environment.
 
 1. install nix
 2. install devenv
-3. clone project
-4. enter cloned dir
-5. use command `direnv allow`
+3. configure shared secretspec provider (if not already done)
+    1. `nix run nixpkgs#secretspec -- config init`
+    2. `nix run nixpkgs#secretspec -- config provider add shared keyring://secretspec/shared/{profile}/{key}`
+4. clone project
+5. enter cloned dir
+6. use command `direnv allow`
 
 ## Structure
 

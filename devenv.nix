@@ -16,6 +16,11 @@
     gradle --version
     node --version
     pnpm --version
+    echo
+    echo "Never print secrets :)"
+    echo ${config.secretspec.secrets.api-key}
+    echo ${config.secretspec.secrets.shared-secret}
+    echo
   '';
 
   # set env variables when running in ci with `--profile=ci`
