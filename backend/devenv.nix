@@ -32,13 +32,7 @@ in
       SPRING_DATABASE_PASSWORD = dbPass;
     };
     cwd = "${config.git.root}/backend";
-    process-compose = {
-      depends_on = {
-        postgres = {
-          condition = "process_healthy";
-        };
-      };
-    };
+    after = [ "devenv:processes:postgres" ];
   };
 
   # TODO: make sure db is mocked or ready
