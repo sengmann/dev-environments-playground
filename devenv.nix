@@ -11,10 +11,6 @@
     pkgs.secretspec
   ];
 
-  # https://devenv.sh/services/
-  # services.postgres.enable = true;
-
-  # https://devenv.sh/basics/
   enterShell = ''
     git --version # Use packages
     gradle --version
